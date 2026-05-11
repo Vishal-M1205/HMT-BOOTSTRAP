@@ -15,21 +15,25 @@
 
 .watch-options{
     display: none;
-    opacity: 0;
-    transition: opacity 1s;
+    
 }
 .watch-div:hover .watch-options{
     display: flex;
-    opacity: 1;
-}
 
+}
+.watch-options a{
+    transition: all 0.3s;
+}
+.watch-options a:hover{
+  color: #4275ed !important; 
+}
 .letter-spacing-2{
     letter-spacing: 2px;
 }
 
 .shopFor-img{
-   width: 370px;
-   height: 370px;
+   max-width: 370px;
+   max-height: 370px;
 }
 .shopFor-text-men{
      bottom: 10%;
@@ -41,8 +45,8 @@
 }
 
 .img-div img{
-width: 230px;
-height: 250px;
+max-width: 230px;
+max-height: 250px;
 transition: transform 0.5s;
 }
 .img-div img:hover{
@@ -61,11 +65,15 @@ transition: transform 0.5s;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+    
 }
 .trend-pro-slider{
-    width: 1090px;
+   max-width: 1090px;
    gap: 30px;
+   scroll-snap-type: x mandatory;
    scrollbar-width: none;
+   
 }
 
 .grey-text{
@@ -99,5 +107,107 @@ transition: transform 0.5s;
 }
 
 .trend-pro{
+    max-width: 1090px;
+}
+
+.play-pos{
+    bottom: 40%;
+    right: 50%;
+}
+
+.hmt-coll{
     width: 1090px;
+}
+
+.hmt-coll-slider{
+    max-width: 1090px;
+   gap: 30px;
+  scrollbar-width: none;
+   scroll-snap-type: x mandatory;
+}
+
+.hmt-coll-card{
+    width: fit-content;
+    scroll-snap-align: start;
+}
+
+.w-fit-content{
+    width: fit-content;
+}
+
+
+.hmt-text-pos{
+    bottom: 30%;
+}
+
+.hmt-grey-text{
+    color: rgb(75, 75, 75);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.premium-watch-btn{
+    background: linear-gradient(to left, rgb(111, 7, 215),rgb(199, 65, 179));
+    background-size: 200%;
+    background-position: left;
+    transition: all 0.6s;
+    border: none !important;
+}
+
+.premium-watch-btn:hover{
+  background-position: right;
+}
+
+.end-text-pos{
+    bottom: 30%;
+    right: 5%;
+}
+
+.address-text-foot{
+    line-height: 200%;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.nav-opt{
+    cursor: pointer;
+    transition: all 0.5s;
+    border-bottom: #0033ab00 solid 2px;
+}
+
+.nav-opt:hover{
+    border-bottom: #0033ab solid 2px;
+}
+
+.trend-pro-opt p{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.trend-pro-opt p:hover{
+    color: #0033ab !important;
+}
+
+@media (max-width: 1024px ) and (min-width: 540px){
+
+.nav-opt{
+    font-size: smaller;
+    white-space: nowrap;
+}
+.trend-pro-slider{
+   max-width: 750px;
+   
+}
+
+.hmt-coll-slider{
+    max-width: 750px;
+}
+.hmt-coll{
+   max-width: 750px; 
+}
+
+.hmt-text-pos p{
+    font-size: small !important;
+}
 }
