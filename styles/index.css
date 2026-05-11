@@ -189,6 +189,11 @@ transition: transform 0.5s;
     color: #0033ab !important;
 }
 
+.carousel-item img{
+    width: 100vw;
+    height: 580px;
+}
+
 @media (max-width: 1024px ) and (min-width: 540px){
 
 .nav-opt{
@@ -209,5 +214,31 @@ transition: transform 0.5s;
 
 .hmt-text-pos p{
     font-size: small !important;
+}
+
+.end-text-pos p{
+     font-size: small !important;
+}
+
+}
+
+@media (max-width:580px){
+    .carousel-item img{
+    width: 100vw;
+    height: 380px;
+}
+.trend-pro-opt{
+    width: 100%; 
+    margin-right: 30px;
+    overflow-x: scroll;
+}
+.trend-pro-slider{
+    width: 250px;
+}
+.hmt-coll{
+    width: 250px;
+}
+.hmt-coll-slider{
+    width: 250px;
 }
 }
