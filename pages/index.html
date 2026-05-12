@@ -11,7 +11,7 @@
   <body>
      <section id="nav1" class="container-fluid py-3 navy-blue-bg d-flex justify-content-between align-items-center text-light" >
                  <div >
-                     <a href="" class="text-decoration-none d-none  text-light d-lg-block d-none">Support: 080-28385491/9380369917 /info@hmtwatches.in/</a>
+                     <a href="" class="text-decoration-none d-none  text-light d-md-block d-none">Support: 080-28385491/9380369917 /info@hmtwatches.in/</a>
                  </div>
                  <div class="d-flex gap-lg-2 align-items-center">
                     <select name="" id="" class="h-25 ">
@@ -23,10 +23,11 @@
                     <a href="" class="text-decoration-none text-light text-nowrap"><i class="bi bi-cart-fill px-2 "></i>Cart (0)</a>
                  </div>
      </section>
-     <section id="nav2" class="d-md-flex d-none   justify-content-center align-items-center py-3 sticky-top " style="height: 60px; background-color: white;">
-                <div class="d-flex gap-lg-5 gap-3 align-items-center nav2-first-option me-lg-5 me-1   ">
+     <section id="nav2" class="d-md-flex d-none   justify-content-around align-items-center py-3 sticky-top " style="height: 60px; background-color: white;"> 
+               <i class="bi bi-list ms-lg-5" id="toggle-btn"></i>
+                <div class="d-flex gap-lg-5 gap-3 align-items-center nav2-first-option ms-lg-5 me-1 " id="nav-2-1">
                   <div class="watch-div">
-                     <p  class="fw-bold text-black text-decoration-none mb-0 position-relative nav-opt letter-spacing-2
+                     <p  class="fw-bold text-black text-decoration-none mb-0 position-relative nav-opt letter-spacing-2 
                      "> WATCHES</p>
                      <div class="watch-options rounded-3 shadow-lg  bg-white position-absolute w-50  row" >
                           <div class="col-4 d-flex flex-column justify-content-between gap-3 py-3">
@@ -65,14 +66,15 @@
                       <p class="fw-bold nav-opt mb-0 py-2 letter-spacing-2" ">GIFTING</p>
                 </div>
                 <img src="https://www.hmtwatches.in/storage/app/public/image/logo.png" alt="" style="width: 150px; height: 31px;"">
-                <div class="d-flex gap-3 nav2-second-option align-items-center ms-lg-5 ms-1 ">
+                <div class="d-flex gap-3 nav2-second-option align-items-center me-lg-5 ms-1 " id="nav-2-2">
                       <p class="fw-bold nav-opt mb-0 py-2 letter-spacing-2" >ABOUT US</p>
                       <p class="fw-bold nav-opt mb-0 py-2 letter-spacing-2" >CONTACT US</p>
                       <p class="fw-bold nav-opt mb-0 py-2 letter-spacing-2" ><i class="bi bi-geo-alt-fill"></i>STORE LOCATION</p>
-                      <i class="bi bi-search fw-bold fs-4 d-lg-block d-md-none "></i>
+                      
                 </div>
+                <i class="bi bi-search fw-bold fs-4 d-lg-block  me-lg-5"></i>
      </section>
-     <section class="navbar navbar-expand-lg d-md-none">
+     <section class="navbar bg-white  navbar-expand-lg sticky-top d-md-none">
                <i class="bi bi-search fw-bold fs-4 ms-2"></i>
                <div class="navbar-brand">
                         <img src="https://www.hmtwatches.in/storage/app/public/image/logo.png" alt="" style="width: 150px; height: 31px;"">
@@ -81,10 +83,12 @@
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="nav">
-                <div class="navbar-nav">
-                   <a href="" class="nav-link">WATCHES</a>
-                   <a href="" class="nav-link">WATCHES</a>
-                   <a href="" class="nav-link">WATCHES</a>
+                <div class="navbar-nav ">
+                   <a href="" class="nav-link text-center">WATCHES</a>
+                   <a href="" class="nav-link text-center">TOWER CLOCK</a>
+                   <a href="" class="nav-link text-center">ABOUT US</a>
+                   <a href="" class="nav-link text-center">CONTACT</a>
+                   <a href="" class="nav-link text-center"><i class="bi bi-geo-alt-fill"></i>STORE LOCATION</a>
                </div>
                </div>
               
@@ -113,7 +117,7 @@
 
      <section class=" mb-3">
              <p class="fs-4 fw-bold mt-4 mb-5 text-center">SHOP FOR</p>  
-             <div class="d-flex gap-4 justify-content-center align-items-center flex-column flex-lg-row">
+             <div class="d-flex gap-4 justify-content-center align-items-center flex-column flex-md-row">
               <div class="position-relative">
             <img src="../images/men.jpg" alt="" class="rounded-4 shadow-lg shopFor-img " >
                 <p class="position-absolute text-light fw-bold fs-3 shopFor-text-men">MEN</p>
@@ -129,7 +133,7 @@
 
      <section class="mb-3 mt-5 ">
           <p class="fs-4 fw-bold mt-4 mb-5 text-center">TRENDING PRODUCTS </p> 
-          <div class="d-flex justify-content-lg-center fw-bold gap-lg-4 gap-3 trend-pro-opt text-nowrap ms-3 me-3">
+          <div class="d-flex justify-content-md-center fw-bold gap-lg-4 gap-3 trend-pro-opt text-nowrap ms-3 me-3">
               <p class="navy-blue-text">Newly Listed</p>
               <p class="text-secondary">Fast Moving</p>
               <p class="text-secondary">Product with offer</p>
@@ -141,101 +145,136 @@
              <span class="arrow-bg py-1 px-2 rounded-circle position-absolute arrow-prev fw-bold fs-4" id="prevBtn"> < </span>
              <div class="trend-pro-slider d-flex overflow-x-scroll" id="trend-pro-slider">
               
-               <div class="trend-card">
-                      <div class="img-div">
+               <div class="trend-card position-relative">
+                      <div class="img-div ">
                             <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1604241777760484.jpg" alt="">
                       </div>
+                      <p class="fw-bold text-danger position-absolute out-of-stock">Out of stock</p>
                       <p class="fw-medium letter-spacing-2 grey-text mt-2 mb-0">HMT Pace UGGG 102</p>
                       <p class="fw-bold">RS. 4950</p>
                       <div class="d-flex gap-4 trend-card-opt" id="opt1">
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
+                          <a href="" title="Notify me"
+                          data-bs-toggle="tooltip"
+                          class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
+                          <a href="" title="Quick view"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
+                          <a href="" title="Compare"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
                       </div>
                </div>
-               <div class="trend-card">
+               <div class="trend-card position-relative">
                       <div class="img-div">
-                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1604241777760484.jpg" alt="">
+                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/0701252111020971.jpg" alt="">
                       </div>
+                      <span class="discount position-absolute">25%</span>
                       <p class="fw-medium letter-spacing-2 grey-text mt-2 mb-0">HMT Pace UGGG 102</p>
                       <p class="fw-bold">RS. 4950</p>
                       <div class="d-flex gap-4 trend-card-opt" id="opt2">
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
+                           <a href="" title="Notify me"
+                          data-bs-toggle="tooltip"
+                          class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
+                          <a href="" title="Quick view"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
+                          <a href="" title="Compare"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
                       </div>
                       
                </div>
                <div class="trend-card">
                       <div class="img-div">
-                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1604241777760484.jpg" alt="">
+                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/020326256855587.jpg" alt="">
                       </div>
                       <p class="fw-medium letter-spacing-2 grey-text mt-2 mb-0">HMT Pace UGGG 102</p>
                       <p class="fw-bold">RS. 4950</p>
                       <div class="d-flex gap-4 trend-card-opt" id="opt3">
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
+                           <a href="" title="Notify me"
+                          data-bs-toggle="tooltip"
+                          class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
+                          <a href="" title="Quick view"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
+                          <a href="" title="Compare"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
                       </div>
                </div>
-               <div class="trend-card">
+               <div class="trend-card position-relative">
                       <div class="img-div">
-                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1604241777760484.jpg" alt="">
+                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/0811231151093799.jpg" alt="">
                       </div>
+                       <p class="fw-bold text-danger position-absolute out-of-stock">Out of stock</p>
                      <p class="fw-medium letter-spacing-2 grey-text mt-2 mb-0">HMT Pace UGGG 102</p>
                       <p class="fw-bold">RS. 4950</p>
                       <div class="d-flex gap-4 trend-card-opt" id="opt4">
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
+                           <a href="" title="Notify me"
+                          data-bs-toggle="tooltip"
+                          class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
+                          <a href="" title="Quick view"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
+                          <a href="" title="Compare"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
                       </div>
                </div>
                <div class="trend-card">
                       <div class="img-div">
-                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1604241777760484.jpg" alt="">
+                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/0711242054237058.jpg" alt="">
                       </div>
                      <p class="fw-medium letter-spacing-2 grey-text mt-2 mb-0">HMT Pace UGGG 102</p>
                       <p class="fw-bold">RS. 4950</p>
                       <div class="d-flex gap-4 trend-card-opt" id="opt5">
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
+                           <a href="" title="Notify me"
+                          data-bs-toggle="tooltip"
+                          class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
+                          <a href="" title="Quick view"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
+                          <a href="" title="Compare"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
                       </div>
                </div>
                <div class="trend-card">
                       <div class="img-div">
-                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1604241777760484.jpg" alt="">
+                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/081123905280799.jpg" alt="">
                       </div>
                      <p class="fw-medium letter-spacing-2 grey-text mt-2 mb-0">HMT Pace UGGG 102</p>
                       <p class="fw-bold">RS. 4950</p>
                       <div class="d-flex gap-4 trend-card-opt" id="opt5">
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
+                           <a href="" title="Notify me"
+                          data-bs-toggle="tooltip"
+                          class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
+                          <a href="" title="Quick view"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
+                          <a href="" title="Compare"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
                       </div>
                </div>
                <div class="trend-card">
                       <div class="img-div">
-                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1604241777760484.jpg" alt="">
+                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1107241552752325.jpg" alt="">
                       </div>
                      <p class="fw-medium letter-spacing-2 grey-text mt-2 mb-0">HMT Pace UGGG 102</p>
                       <p class="fw-bold">RS. 4950</p>
                       <div class="d-flex gap-4 trend-card-opt" id="opt5">
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
+                           <a href="" title="Notify me"
+                          data-bs-toggle="tooltip"
+                          class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
+                          <a href="" title="Quick view"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
+                          <a href="" title="Compare"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
                       </div>
                </div>
                <div class="trend-card">
                       <div class="img-div">
-                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1604241777760484.jpg" alt="">
+                            <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/230326618331398.png" alt="">
                       </div>
                      <p class="fw-medium letter-spacing-2 grey-text mt-2 mb-0">HMT Pace UGGG 102</p>
                       <p class="fw-bold">RS. 4950</p>
                       <div class="d-flex gap-4 trend-card-opt" id="opt6">
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
-                          <a href="" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
+                           <a href="" title="Notify me"
+                          data-bs-toggle="tooltip"
+                          class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-cart-fill text-light"></i></a>
+                          <a href="" title="Quick view"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-eye-fill text-light"></i></a>
+                          <a href="" title="Compare"
+                          data-bs-toggle="tooltip" class="text-decoration-none navy-blue-bg px-3 py-2 rounded-3"><i class="bi bi-repeat text-light"></i></a>
                       </div>
                </div>
           </div>
@@ -250,7 +289,7 @@
            <p class="text-center grey-text fs-6 ">HMT explore watches description.</p>
            <div class="position-relative">
                 <img src="../images/image4.jpg" alt="" class="w-100 mt-4">
-                <span><i class="bi bi-play-fill fs-1 play-pos py-3 px-4 rounded-circle bg-danger text-white position-absolute"></i></span>
+                <span><i class="bi bi-play-fill fs-md-1 fs-4 py-2 px-3 play-pos py-md-3 px-md-4 rounded-circle bg-danger text-white position-absolute"></i></span>
            </div>
            
      </section>
@@ -264,9 +303,27 @@
            <div class="hmt-coll-slider d-flex overflow-x-scroll " id="hmt-coll-slider">
                    <div class="hmt-coll-card">
                       <div class="img-div">
-                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/23188544533.png" alt="">
+                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/24447271239.jpg" alt="">
                       </div>
-                      <p class="grey-text text-center letter-spacing-2 my-3">Vijay</p>
+                      <p class="grey-text text-center letter-spacing-2 my-3">Janata</p>
+                   </div>
+                   <div class="hmt-coll-card">
+                      <div class="img-div">
+                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/081880758978.jpg" alt="">
+                      </div>
+                       <p class="grey-text text-center letter-spacing-2 my-3">Commando</p>
+                   </div>
+                   <div class="hmt-coll-card">
+                      <div class="img-div">
+                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/271792943788.jpg" alt="">
+                      </div>
+                       <p class="grey-text text-center letter-spacing-2 my-3">Kailash</p>
+                   </div>
+                   <div class="hmt-coll-card">
+                      <div class="img-div">
+                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/2324175928.jpg" alt="">
+                      </div>
+                       <p class="grey-text text-center letter-spacing-2 my-3">Gandaberunda</p>
                    </div>
                    <div class="hmt-coll-card">
                       <div class="img-div">
@@ -276,33 +333,15 @@
                    </div>
                    <div class="hmt-coll-card">
                       <div class="img-div">
-                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/23188544533.png" alt="">
+                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/021516297734.jpg" alt="">
                       </div>
-                       <p class="grey-text text-center letter-spacing-2 my-3">Vijay</p>
+                       <p class="grey-text text-center letter-spacing-2 my-3">Bahadur</p>
                    </div>
                    <div class="hmt-coll-card">
                       <div class="img-div">
-                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/23188544533.png" alt="">
+                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/032125154046.jpg" alt="">
                       </div>
-                       <p class="grey-text text-center letter-spacing-2 my-3">Vijay</p>
-                   </div>
-                   <div class="hmt-coll-card">
-                      <div class="img-div">
-                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/23188544533.png" alt="">
-                      </div>
-                       <p class="grey-text text-center letter-spacing-2 my-3">Vijay</p>
-                   </div>
-                   <div class="hmt-coll-card">
-                      <div class="img-div">
-                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/23188544533.png" alt="">
-                      </div>
-                       <p class="grey-text text-center letter-spacing-2 my-3">Vijay</p>
-                   </div>
-                   <div class="hmt-coll-card">
-                      <div class="img-div">
-                  <img src="https://www.hmtwatches.in/storage/app/public/image/collections/23188544533.png" alt="">
-                      </div>
-                       <p class="grey-text text-center letter-spacing-2 my-3">Vijay</p>
+                       <p class="grey-text text-center letter-spacing-2 my-3">Sindoor</p>
                    </div>
            </div>
          </div>
@@ -322,11 +361,11 @@
      </div>
     <!-- hmt-text -->
      <div class="d-flex justify-content-center align-items-center my-5 py-4">
-          <div class="w-75 letter-spacing-2 hmt-grey-text">
+          <div class="w-75 letter-spacing-2 hmt-grey-text ">
         <p>We have immense pleasure in welcoming you to the official website of HMT Watches!. HMT,a Public Sector Undertaking by Government of India, is a pioneer in Watch manufacturing in India since 1961. HMT uses High Quality, Precision Metallic components for Accurate time keeping and trouble free performance - that lasts a life time. Mechanical Hand wound, Automatic, Quarts, the Braille, the Skeleton Watch, Pocket Watch- each a true masterpiece in its class. HMT Watches come in a wide range of Attractive designs and Affordable Price. Watches that are an exquisite blend of form and function, of style and substance.</p>
-        <div class="d-flex justify-content-between align-content-center">
-            <button class="text-white bg-black fw-semibold letter-spacing-2 px-4 py-3 rounded-3">History of HMT Watches</button>
-            <button class="text-white fw-semibold premium-watch-btn letter-spacing-2 px-4 py-3 rounded-3">HMT Premium Watches</button>
+        <div class="d-flex justify-content-between align-content-center flex-md-row flex-column gap-md-0 gap-2">
+            <button class="text-white bg-black fw-semibold letter-spacing-2 py-2 px-lg-4 py-lg-3 rounded-3 ">History of HMT Watches</button>
+            <button class="text-white fw-semibold premium-watch-btn letter-spacing-2 py-2 px-lg-4 py-lg-3 rounded-3">HMT Premium Watches</button>
 
         </div> 
           </div>
@@ -336,7 +375,7 @@
 
        <div class="position-relative my-5">
          <img src="../images/endbanner.jpg" alt="" class="w-100">
-         <div class="position-absolute w-50 d-flex  align-items-end gap-2 flex-column ms-5 end-text-pos">
+         <div class="position-absolute w-50 d-flex  align-items-end gap-2 flex-column ms-5 end-text-pos ">
             <p class="navy-blue-text fs-6 letter-spacing-2 fw-medium">EACH A TRUE MASTERPIECE IN ITS CLASS.</p>
             <p class="navy-blue-text fw-semibold fs-4 letter-spacing-2">HMT SKELETON</p>
            
@@ -388,7 +427,7 @@
           </div>
       </div>
      </section>
-
+     <span class="px-md-3 py-md-2 px-2 py-1 fs-4 bg-black text-white position-fixed z-3 up-arrow " id="up-arrow">↑</span>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="../scripts/script.js"></script>
   </body>
